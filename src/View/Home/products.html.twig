@@ -1,0 +1,18 @@
+{% extends 'layout.html.twig' %}
+
+{% block afftableau %}
+
+
+
+{% for product in products %}
+{{product}}
+{% if loop.index % 3 == 0 %} 
+</br> 
+{% endif %} 
+{% endfor %}
+
+    
+
+{{ dump(products) }}
+
+{% endblock %}
